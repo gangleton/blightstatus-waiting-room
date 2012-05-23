@@ -1,0 +1,45 @@
+#tag{
+	position: absolute;
+	right: 5%;
+	top: -8px;
+}
+
+#topbar { 
+	text-align: center; 
+	top: 0px; 
+	left: 0px; 
+	height: 30px; 
+	width: 100%; 
+	background: #CBDCA3;/*#419ED8;*/ 
+	-moz-box-shadow: 0px 0px 5px 0px #888; 
+	-webkit-box-shadow: 0px 0px 9px 0px #888; 
+	box-shadow: 0px 0px 5px 0px #888; 
+	z-index: 99999;
+
+}
+
+#topbar	p {
+		color: #fff; 
+		font-family: 'Arvo'; 
+		font-size: 12px; 
+		font-weight: bold;
+		vertical-align: middle; 
+		font-weight: 300; 
+		letter-spacing: 2px;
+		padding: 4px;
+	}
+	
+#topbar img {
+		vertical-align: middle; 
+		margin-right: 15px;
+    height: 20px;
+	}
+
+#topbar a {
+		color: #fff; 
+		text-decoration: none; 
+		border-bottom:1px dotted #fff;
+	}
+
+
+

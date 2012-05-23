@@ -1,0 +1,57 @@
+!!!
+%html
+  /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+  /[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+  /[if IE 8] <html class="no-js lt-ie9" lang="en">
+  %head
+    %title blightSTATUS is coming soon!
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/bootstrap.min.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/application.css"}
+    %meta{:charset => "utf-8"}
+      %meta{:content => "", :name => "description"}
+        / Mobile viewport optimized: h5bp.com/viewport
+        %meta{:content => "width=device-width", :name => "viewport"}
+  %body
+    #tag
+      %a{:href => "http://www.codeforamerica.org"}
+        %img{:border => "0", :src => "http://jlord.us/tag_cfa.png", :width => "100px"}/
+    #topbar
+      %p
+        %img{:height => "20px", :src => "http://jlord.us/code_flag.png"}>/
+        Created by Code for America in partnership with the City of New Orleans.
+        = succeed "." do
+          %a{:href => "http://www.codeforamerica.org", :target => "_blank"} Learn more
+    %div{:class => "container"}
+      .navbar.navbar-fixed-top
+      %header.page-header
+        %h1#logo
+          blightStatus
+        %h1 
+          is coming soon
+
+      %main
+        .signup
+          %h3
+            Enter your email below, and we'll let you know when we've launched
+          .errors
+          %form{:action => '/signup', :method => 'POST'}
+            %input.email{:name => 'email', :type => 'text', :placeholder => "Email"}
+            %input{:type => 'submit', :value => "Sign me up!"}
+
+      %footer
+
+      %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+      %script{:src => "/js/application.js"}
+
+      :javascript
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31630834-1']);
+        _gaq.push(['_setDomainName', 'herokuapp.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
