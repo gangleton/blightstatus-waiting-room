@@ -21,22 +21,32 @@
         Created by Code for America in partnership with the City of New Orleans.
         = succeed "." do
           %a{:href => "http://www.codeforamerica.org", :target => "_blank"} Learn more
-    %div{:class => "container"}
+    %div.container.hero-unit
       .navbar.navbar-fixed-top
       %header.page-header
-        %h1#logo
-          blightStatus
+        %h1
+          %span.upper Hi there.
         %h1 
-          is coming soon
+          Thanks for visiting!
+        %br
+        %h2 
+          BlightSTATUS isn't ready to launch yet, but if you're here we have some things you can do:
 
       %main
-        .signup
-          %h3
-            Enter your email below, and we'll let you know when we've launched
-          .errors
-          %form{:action => '/signup', :method => 'POST'}
-            %input.email{:name => 'email', :type => 'text', :placeholder => "Email"}
-            %input{:type => 'submit', :value => "Sign me up!"}
+        %ul.unstyled
+          %li
+            .signup-btn
+              %a.btn.btn-large.btn-primary{:href => "#"}
+                Sign up for updates
+            %br
+            .signup.dropdown.hidden
+              %form{:action => '/signup', :method => 'POST'}
+                %h3
+                  Enter your email below, and we'll let you know when we've launched
+                %br
+                .error
+                %input.email{:name => 'email', :type => 'text', :placeholder => "Email"}
+                %input{:type => 'submit', :value => "Sign me up"}
 
       %footer
 

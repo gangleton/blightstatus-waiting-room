@@ -7,13 +7,23 @@ $(document).ready(function(){
       $.post('/signup', formData, function(data, textStatus, jqXHR){
         console.log(data);
         if(data.success == true){
+          $('.error').hide();
           $('.signup').html('<h3>Thank you for giving us your email! We\'ll let you know when we\'ve launched.</h3>');
         } else {
-          $('.errors').text('Something went wrong. Please try again.');
+          $('.error').text('Something went wrong. Please try again.');
         };
       }, 'json');
      }else{
-       $('.errors').text('Please enter a valid email address');
+       $('.error').text('Please enter a valid email address');
      };
   });
+
+
+ $('.signup-btn').toggle(function(e){
+    e.preventDefault();
+    $('.signup.dropdown').show();
+ }, function(e){
+    e.preventDefault();
+    $('.signup.dropdown').hide();
+ });
 });

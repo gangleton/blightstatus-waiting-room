@@ -1,7 +1,19 @@
+.upper {
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
 #tag{
 	position: absolute;
 	right: 5%;
 	top: -8px;
+}
+
+.error {
+  color: #df382c;
 }
 
 #topbar { 
