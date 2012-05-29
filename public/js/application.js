@@ -19,11 +19,15 @@ $(document).ready(function(){
   });
 
 
- $('.signup-btn').toggle(function(e){
+ $('.toggle-btn').toggle(function(e){
     e.preventDefault();
-    $('.signup.dropdown').show();
+    $(this).siblings('.dropdown').show();
  }, function(e){
     e.preventDefault();
-    $('.signup.dropdown').hide();
+    $(this).siblings('.dropdown').hide();
  });
+
+  $('.carousel').carousel({
+    interval: false
+  });
 });

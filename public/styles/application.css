@@ -16,6 +16,10 @@
   color: #df382c;
 }
 
+#mockup-carousel .item img {
+  width: 100%
+}
+
 #topbar { 
 	text-align: center; 
 	top: 0px; 

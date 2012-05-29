@@ -35,7 +35,7 @@
       %main
         %ul.unstyled
           %li
-            .signup-btn
+            #signup-btn.toggle-btn
               %a.btn.btn-large.btn-primary{:href => "#"}
                 Sign up for updates
             %br
@@ -47,11 +47,37 @@
                 .error
                 %input.email{:name => 'email', :type => 'text', :placeholder => "Email"}
                 %input{:type => 'submit', :value => "Sign me up"}
+          %li
+            #mockup-btn.toggle-btn
+              %a.btn.btn-large.btn-primary{:href => "#mockups"}
+                View designs
+            %br
+            .mockups.dropdown.hidden
+              #mockup-carousel.carousel
+                .carousel-inner
+                  .active.item
+                    %img{:src => "/images/1.png"}
+                  .item
+                    %img{:src => "/images/2.png"}
+                  .item
+                    %img{:src => "/images/3.png"}
+                  .item
+                    %img{:src => "/images/4.png"}
+                  .item
+                    %img{:src => "/images/5.png"}
+                  .item
+                    %img{:src => "/images/6.png"}
+
+                .carousel-control.left{:href => "#mockup-carousel", "data-slide" => "prev"}
+                  &lsaquo;
+                .carousel-control.right{:href => "#mockup-carousel", "data-slide" => "next"}
+                  &rsaquo;
 
       %footer
 
       %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
       %script{:src => "/js/application.js"}
+      %script{:src => "/js/bootstrap-carousel.js"}
 
       :javascript
         var _gaq = _gaq || [];
