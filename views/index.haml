@@ -76,12 +76,30 @@
             #dev-btn
               %a.btn.btn-large.btn-primary{:href => "http://blightstatus-dev.herokuapp.com", :target => "_blank"}
                 View development site
+            %br
+
+          %li
+            #dev-btn
+              %a.btn.btn-large.btn-primary{:href => "javascript:UserVoice.showPopupWidget();" }
+                Give us feedback
+            
+              
+
+
+
 
       %footer
 
       %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
       %script{:src => "/js/application.js"}
       %script{:src => "/js/bootstrap-carousel.js"}
+      :javascript
+        var uvOptions = {};
+        (function() {
+          var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+          uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/AnEExsn4LGHKhHip3p4nQ.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+        })();
 
       :javascript
         var _gaq = _gaq || [];
