@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('form').submit(function(e){
     e.preventDefault();
     var emailVal = $('input.email').attr('value');
-    if(emailVal.match(/^[A-Z0-9]+@[A-Z0-9]+\.[A-Z0-9]+/i)){
+    if(emailVal.match(/^[A-Z0-9\.\-]+@[A-Z0-9]+\.[A-Z0-9]+/i)){
       var formData = $(this).serialize();
       $.post('/signup', formData, function(data, textStatus, jqXHR){
         console.log(data);
