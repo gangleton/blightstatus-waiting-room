@@ -8,7 +8,7 @@ $(document).ready(function(){
         console.log(data);
         if(data.success == true){
           $('.error').hide();
-          $('.signup').html('<h3>Thank you for giving us your email! We\'ll let you know when we\'ve launched.</h3>');
+          $('.signup').html('<h3>Thank you for giving us your email! We\'ll let you know when we\'ve launched.</h3></br>');
         } else {
           $('.error').text('Something went wrong. Please try again.');
         };
