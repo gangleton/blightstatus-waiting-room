@@ -7,6 +7,13 @@
     %title blightSTATUS is coming soon!
     %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/bootstrap.min.css"}
     %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/application.css"}
+    :javascript
+      var uvOptions = {};
+      (function() {
+        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/AnEExsn4LGHKhHip3p4nQ.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+      })();
     %meta{:charset => "utf-8"}
       %meta{:content => "", :name => "description"}
         / Mobile viewport optimized: h5bp.com/viewport
@@ -93,13 +100,6 @@
       %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
       %script{:src => "/js/application.js"}
       %script{:src => "/js/bootstrap-carousel.js"}
-      :javascript
-        var uvOptions = {};
-        (function() {
-          var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
-          uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/AnEExsn4LGHKhHip3p4nQ.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
-        })();
 
       :javascript
         var _gaq = _gaq || [];
