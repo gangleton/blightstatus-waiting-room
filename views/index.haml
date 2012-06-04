@@ -54,6 +54,13 @@
                 .error
                 %input.email{:name => 'email', :type => 'text', :placeholder => "Email"}
                 %input{:type => 'submit', :value => "Sign me up"}
+
+          %li
+            #dev-btn
+              %a.btn.btn-large.btn-primary{:href => "http://blightstatus-testing.herokuapp.com", :target => "_blank"}
+                View testing site
+            %br
+
           %li
             #mockup-btn.toggle-btn
               %a.btn.btn-large.btn-primary{:href => "#mockups"}
@@ -79,11 +86,6 @@
                   &lsaquo;
                 .carousel-control.right{:href => "#mockup-carousel", "data-slide" => "next"}
                   &rsaquo;
-          %li
-            #dev-btn
-              %a.btn.btn-large.btn-primary{:href => "http://blightstatus-dev.herokuapp.com", :target => "_blank"}
-                View development site
-            %br
 
           %li
             #dev-btn
