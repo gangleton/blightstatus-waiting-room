@@ -6,6 +6,7 @@
   %head
     %title blightSTATUS is coming soon!
     %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/bootstrap.min.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/bootstrap-responsive.min.css"}
     %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/application.css"}
     :javascript
       var uvOptions = {};
@@ -18,92 +19,97 @@
       %meta{:content => "", :name => "description"}
         / Mobile viewport optimized: h5bp.com/viewport
         %meta{:content => "width=device-width", :name => "viewport"}
-  %body
-    #tag
-      %a{:href => "http://www.codeforamerica.org"}
-        %img{:border => "0", :src => "http://jlord.us/tag_cfa.png", :width => "100px"}/
-    #topbar
-      %p
-        %img{:height => "20px", :src => "http://jlord.us/code_flag.png"}>/
-        Created by Code for America in partnership with the City of New Orleans.
-        = succeed "." do
-          %a{:href => "http://www.codeforamerica.org", :target => "_blank"} Learn more
-    %div.container.hero-unit
-      .navbar.navbar-fixed-top
-      %header.page-header
-        %h1
-          %span.upper Hi there.
-        %h1 
-          Thanks for visiting!
-        %br
-        %h2 
-          BlightSTATUS isn't ready to launch yet, but if you're here we have some things you can do:
+  %body{ "data-spy"=>"scroll", "data-target"=>".bs-docs-sidebar"}
+    %header.header
+      .container
+        .logo.pull-left{:style => "padding: 10px;"}
+          %a{:href => "/"}
+            %img{:src => "/images/blightstatus-logo.png"}
+        .navbar.pull-right{:style => "padding: 0; margin: 0"}
+          %ul.nav{:style => "padding: 20px 20px 0"}
+            %li
+              %a{:href => "/"} Home
+            %li
+              %a{:href => "/about"} About
 
-      %main
-        %ul.unstyled
-          %li
-            #signup-btn.toggle-btn
-              %a.btn.btn-large.btn-primary{:href => "#"}
-                Sign up for updates
-            %br
-            .signup.dropdown.hidden
-              %form{:action => '/signup', :method => 'POST'}
-                %h3
-                  Enter your email below, and we'll let you know when we've launched
-                %br
-                .error
-                %input.email{:name => 'email', :type => 'text', :placeholder => "Email"}
-                %input{:type => 'submit', :value => "Sign me up"}
+    .container
+    .container
+      .row
+        .span1
+        .span10
+          %h1 
+            &nbsp;
+          %div{:style => "background: url('/images/logo.png') repeat scroll 3px -50px transparent; width: 100%; height: 300px"}
 
-          %li
-            #dev-btn
-              %a.btn.btn-large.btn-primary{:href => "http://blightstatus-testing.herokuapp.com", :target => "_blank"}
-                View testing site
-            %br
+        .span1
 
-          %li
-            #mockup-btn.toggle-btn
-              %a.btn.btn-large.btn-primary{:href => "#mockups"}
-                View potential designs
-            %br
-            .mockups.dropdown.hidden
-              #mockup-carousel.carousel
-                .carousel-inner
-                  .active.item
-                    %img{:src => "/images/property_page.png"}
-                  .active
-                    %img{:src => "/images/new-1.png"}
-                  .item
-                    %img{:src => "/images/new-2.png"}
-                  .item
-                    %img{:src => "/images/3.png"}
-                  .item
-                    %img{:src => "/images/4.png"}
-                  .item
-                    %img{:src => "/images/5.png"}
-                  .item
-                    %img{:src => "/images/6.png"}
 
-                .carousel-control.left{:href => "#mockup-carousel", "data-slide" => "prev"}
-                  &lsaquo;
-                .carousel-control.right{:href => "#mockup-carousel", "data-slide" => "next"}
-                  &rsaquo;
+      .row
+        .span12
+          &nbsp;
+          %br
+          %br
+          %br
+      .row
+        .span1
+        .span3
+          %p 
+            %b
+              BlightStatus 
+            makes it simple for residents to find out what’s going on with blighted properties in their community – no long waits on the telephone or visits to City Hall required.
 
-          %li
-            #dev-btn
-              %a.btn.btn-large.btn-primary{:href => "javascript:UserVoice.showPopupWidget();" }
-                Give us feedback
-            
-              
+        .span4
+          %iframe{:allowFullScreen => "", :frameborder => "0", :height => "251", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/49144625", :webkitAllowFullScreen => "", :width => "100%"}
+
+        / .span1
+        .span3
+          %h3{:style => "margin: 0; padding: 0;"}
+            Sign up for updates
+          .signup
+            %form{:action => '/signup', :method => 'POST'}
+              %p
+                Enter your email below, and we'll let you know when we've launched
+              %br
+              .error
+              %input.email{:name => 'email', :type => 'text', :placeholder => "Email"}
+              %input{:type => 'submit', :value => "Sign me up", :class => "btn btn-large btn-primary"}
+
+      .row
+        .span4
+        .span8
+          / %iframe{:allowFullScreen => "", :frameborder => "0", :height => "281", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/49144625", :webkitAllowFullScreen => "", :width => "400"}
 
 
 
+      .row
+        .span1
+        .span10
+          %hr
+        .span1
 
-      %footer
+
+
+      .row
+        .span12
+          &nbsp;
+          %br
+          %br
+          %br
+          / %img{:width => "300px", :src => "/images/sample-address.png"}
+        .span1
+
+
+    %footer
+      .container.footer
+        a project of 
+        %a{:href => "http://codeforamerica.com"} Code for America
+        ·          
+        %a{:href => "http://github.com/codeforamerica/blightstatus"} Fork me on GitHub 
+
+        
 
       %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
       %script{:src => "/js/application.js"}
-      %script{:src => "/js/bootstrap-carousel.js"}
 
       :javascript
         var _gaq = _gaq || [];

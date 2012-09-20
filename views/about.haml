@@ -1,0 +1,172 @@
+!!!
+%html
+  /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+  /[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+  /[if IE 8] <html class="no-js lt-ie9" lang="en">
+  %head
+    %title blightSTATUS is coming soon!
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/bootstrap.min.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/bootstrap-responsive.min.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/styles/application.css"}
+    :javascript
+      var uvOptions = {};
+      (function() {
+        var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+        uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/AnEExsn4LGHKhHip3p4nQ.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+      })();
+    %meta{:charset => "utf-8"}
+      %meta{:content => "", :name => "description"}
+        / Mobile viewport optimized: h5bp.com/viewport
+        %meta{:content => "width=device-width", :name => "viewport"}
+  %body{ "data-spy"=>"scroll", "data-target"=>".bs-docs-sidebar"}
+  %body{ "data-spy"=>"scroll", "data-target"=>".bs-docs-sidebar"}
+    %header.header
+      .container
+        .logo.pull-left{:style => "padding: 10px;"}
+          %a{:href => "/"}
+            %img{:src => "/images/blightstatus-logo.png"}
+        .navbar.pull-right{:style => "padding: 0; margin: 0"}
+          %ul.nav{:style => "padding: 20px 20px 0"}
+            %li
+              %a{:href => "/"} Home
+            %li
+              %a{:href => "/about"} About
+
+
+    .container
+    .container.about-page
+      .row
+        .span1
+        .span10
+          %h1 
+            &nbsp;
+          %div{:style => "background: url('/images/logo.png') repeat scroll 3px -50px transparent; width: 100%; height: 300px"}
+
+        .span1
+
+
+      .row
+        %br
+        %br
+
+    .container
+      .span12
+        .row
+          .span1
+          .span6
+            .row
+              %h2 What does it do?
+              %p BlightStatus makes it simple for residents to find out what’s going on with blighted properties in their community – no long waits on the telephone or visits to City Hall required.
+              %p A great example of government transparency at work, BlightStatus pulls up-to-date property information directly from the City’s official records, providing a single, comprehensive and authoritiative view to the public for the very first time.
+              .left{:style => "padding-top: 10px;"}
+                %h4{:style => " margin-bottom: 5px"} The latest status, at a glance
+                %p Check out a property’s status bar to instantly see where that property stands in the blight process – and what’s coming next. Want to know more? Scroll down  to the detailed case history for a step-by-step description of what’s happened so far, and when.
+              .right{:style => "padding-top: 10px;"}
+                %h4{:style => " margin-bottom: 5px"} Receive alerts on the go
+                %p Subscribe to receive instant alerts via email or text message the moment the status changes on properties you care about. Subscribe to one property, a whole block, or your entire neighborhood, and you’ll always be in the know.
+              .clearfix
+            .row
+              %h2 Why did we make it?
+              %p In New Orleans, countless organizations are working around the clock to improve local communities and reduce blight throughout the city.
+
+              %p However, each of these organizations collect and manage data about blighted properties in entirely different ways, which results in duplicated efforts, inconsistent information, and precious energy wasted.
+              %p We’ve partnered with New Orleans City Hall and NORA to create this site to provide accurate and up-to-date information about the City’s efforts to reduce blight that everybody can use. We hope that this simple and publicly-accessible resource will make the work of these great organizations just a little bit easier.
+            .row
+              %h2 BlightStatus in your city
+              %p We know this problem isn’t unique to New Orleans - there are numerous municipalities across the country tasked with managing a large number of vacant or blighted properties. We want to put BlightStatus to work for you, too!
+              %p
+                Get in touch:
+                %a{:href => "mailto:neworleans@codeforamerica.org"} neworleans@codeforamerica.org
+            .row
+              %h2 Help us help you!
+              %p
+                We want BlightStatus to make your work easier, not harder. If something is confusing or there is a feature missing that would make your work easier, please,
+                %a{:href => "mailto:blightstatus@codeforamerica.org"}
+                  let us know!
+          .span1
+          .span3
+            .meet-the-team
+              %h2
+                Meet the Team
+              .row
+                .span1.img-block
+                  %img{:width => "100%", :alt => "Amir", :src => "http://codeforamerica.org/wp-content/uploads/2011/10/Amir.jpg"}/
+                  .image-name
+                    Amir Reavis-Bey
+                .span1.img-block
+                  %img{:width => "100%", :alt => "Serena", :src => "http://codeforamerica.org/wp-content/uploads/2011/10/Serena.jpg"}/
+                  .image-name
+                    Serena Wales
+              .row
+                .span1.img-block
+                  %img{:width => "100%", :alt => "Alex_pandel", :src => "http://codeforamerica.org/wp-content/uploads/2011/10/Alex_Pandel.jpg"}/
+                  .image-name
+                    Alex Pandel
+                .span1.img-block
+                  %img{:width => "100%",:alt => "Eddie", :src => "http://codeforamerica.org/wp-content/uploads/2011/10/Eddie.jpg"}/
+                  .image-name
+                    Eddie A Tejeda
+            .clearfix
+            .our-partners
+              %br
+              %br
+              %h2
+                Our Partners
+              .city-of-new-orleans
+              .code-for-america
+              .nora
+            .clearfix
+            .get-in-touch{:style => "font-size: 110%"}
+              %br
+              %br
+              %h2 Get in Touch
+              %p
+                Reuse & general info:
+                %p{:style => "padding-left: 10px"}
+                  %a{:href => "mailto:neworleans@codeforamerica.org"} > neworleans@codeforamerica.org
+              %br
+                %p
+                  Feedback, suggestions, or bugs:
+                  %p{:style => "padding-left: 10px"}
+                    %a{:href => "mailto:blightstatus@codeforamerica.org"}
+                      > blightstatus@codeforamerica.org
+                / %p
+                / Twitter:
+                / %p{:style => "padding-left: 30px"}
+                / =link_to "> @blightSTATUS", "http://twitter.com/blightSTATUS"
+
+
+
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %br
+    %footer
+      .container.footer
+        a project of 
+        %a{:href => "http://codeforamerica.com"} Code for America
+        ·          
+        %a{:href => "http://github.com/codeforamerica/blightstatus"} Fork me on GitHub 
+
+        
+
+      %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+      %script{:src => "/js/application.js"}
+
+      :javascript
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31630834-1']);
+        _gaq.push(['_setDomainName', 'herokuapp.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
