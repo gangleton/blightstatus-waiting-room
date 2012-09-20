@@ -23,10 +23,11 @@
   %body{ "data-spy"=>"scroll", "data-target"=>".bs-docs-sidebar"}
     %header.header
       .container
+        .span1
         .logo.pull-left{:style => "padding: 10px;"}
           %a{:href => "/"}
             %img{:src => "/images/blightstatus-logo.png"}
-        .navbar.pull-right{:style => "padding: 0; margin: 0"}
+        .navbar.pull-left{:style => "padding: 0; margin: 0"}
           %ul.nav{:style => "padding: 20px 20px 0"}
             %li
               %a{:href => "/"} Home
@@ -41,7 +42,7 @@
         .span10
           %h1 
             &nbsp;
-          %div{:style => "background: url('/images/logo.png') repeat scroll 3px -50px transparent; width: 100%; height: 300px"}
+          .header-logo
 
         .span1
 

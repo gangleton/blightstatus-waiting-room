@@ -135,3 +135,29 @@ h2{
 .row h2{
   margin: 10px 0 20px !important;
 }
+
+
+.header-logo{
+  background: url('/images/logo.png') repeat scroll 3px -50px transparent; 
+  width: 100%; 
+  height: 300px;
+
+}
+@media (max-width: 767px) { 
+
+  .header-logo{
+    background: url("/images/logo.png") repeat scroll -180px  -50px transparent;
+    width: 100%; 
+    height: 300px;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .header-logo{
+    background: url("/images/logo.png") repeat scroll -180px  -50px transparent;
+    width: 100%; 
+    height: 300px;
+
+  }
+}
