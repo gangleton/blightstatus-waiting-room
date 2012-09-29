@@ -20,6 +20,7 @@ end
 get '/about' do
   haml :about
 end
+
 post '/signup' do
   begin
     DB[:signups].insert(:email => params[:email])

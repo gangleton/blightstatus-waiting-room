@@ -7,6 +7,15 @@ body{
 
 }
 
+
+.header-background{
+  z-index: -100; 
+  position: absolute; 
+  top: 0; left: 0; width: 100%; height: 60px; 
+  background: -moz-linear-gradient(center top , #FFFFFF 0%, #F9F9F9 50%, #F1F1F1 65.1%, #EFEFEF 100%) repeat scroll 0 0 transparent;
+}
+
+
 p{
 	font-size: 110%;	
   font-family: "Lato";
@@ -43,7 +52,6 @@ body{
 }
 
 header {
-	background: #eee;
   height: 100%;
   width: 100%;
   border-bottom: 1px solid #ddd;
