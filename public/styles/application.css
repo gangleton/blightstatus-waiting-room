@@ -109,6 +109,28 @@ footer{
 
 
 
+
+.gnof{
+  background: url("/images/gnof_logo.png") no-repeat scroll 10px 5px transparent;
+  float: left;
+  height: 150px;
+  width: 99px;
+}
+
+.osf{
+  background: url("/images/OSF_logo.png") no-repeat scroll 10px 0 transparent;
+  float: right;
+  height: 60px;
+  width: 250px;
+
+}
+.ford{
+  background: url("/images/Ford_logo.png") no-repeat scroll 10px 0 transparent;
+  float: right;
+  height: 60px;
+  width: 250px;
+}
+
 .img-block{
   width: 100px;
   float: left;

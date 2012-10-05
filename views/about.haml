@@ -70,10 +70,15 @@
               .clearfix
             .row
               %h2 Why did we make it?
+              %p
+                %iframe{:width=>"550px", :height=>"350px", :src=>"http://www.youtube.com/embed/WhceB6bqvVQ", :frameborder=>"0", :allowfullscreen => "true"}
+
               %p In New Orleans, countless organizations are working around the clock to improve local communities and reduce blight throughout the city.
 
               %p However, each of these organizations collect and manage data about blighted properties in entirely different ways, which results in duplicated efforts, inconsistent information, and precious energy wasted.
               %p We’ve partnered with New Orleans City Hall and NORA to create this site to provide accurate and up-to-date information about the City’s efforts to reduce blight that everybody can use. We hope that this simple and publicly-accessible resource will make the work of these great organizations just a little bit easier.
+
+
             .row
               %h2 BlightStatus in your city
               %p We know this problem isn’t unique to New Orleans - there are numerous municipalities across the country tasked with managing a large number of vacant or blighted properties. We want to put BlightStatus to work for you, too!
@@ -86,8 +91,7 @@
                 We want BlightStatus to make your work easier, not harder. If something is confusing or there is a feature missing that would make your work easier, please,
                 %a{:href => "mailto:blightstatus@codeforamerica.org"}
                   let us know!
-          .span1
-          .span3
+          .span4
             .meet-the-team
               %h2
                 Meet the Team
@@ -111,13 +115,18 @@
                     Eddie A Tejeda
             .clearfix
             .our-partners
-              %br
-              %br
               %h2
-                Our Partners
+                OUR PARTNERS
               .city-of-new-orleans
               .code-for-america
               .nora
+            .clearfix
+            .our-supporters
+              %h2
+                OUR SUPPORTERS
+              .ford
+              .gnof
+              .osf
             .clearfix
             .get-in-touch{:style => "font-size: 110%"}
               %br
