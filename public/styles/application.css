@@ -11,8 +11,11 @@ body{
 .header-background{
   z-index: -100; 
   position: absolute; 
-  top: 0; left: 0; width: 100%; height: 60px; 
+  top: 0; left: 0; width: 100%; height: 61px; 
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFFFFF), to(#F9F9F9));
+  background: linear-gradient(#FFFFFF, #F9F9F9);
   background: -moz-linear-gradient(center top , #FFFFFF 0%, #F9F9F9 50%, #F1F1F1 65.1%, #EFEFEF 100%) repeat scroll 0 0 transparent;
+
 }
 
 
